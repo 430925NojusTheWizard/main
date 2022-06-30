@@ -1,0 +1,130 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    font-family: 'Brawler', serif;
+    padding-top: 7em;
+}
+
+.navbar{
+    width: 100%;
+    height: 80px;
+    position: fixed;
+    top: 0;
+    left: 0;
+    display: flex;
+    justify-content: center;
+    z-index: 9;
+    transition: 0.5s;
+    background-color: rgba(	78, 99, 174, 0.5);
+}
+
+.links-container{
+    display: flex;
+    align-items: center;
+    list-style: none;
+}
+
+.link-item{
+    margin: 10px;
+}
+
+.link{
+    font-size: 20px;
+    color: #fff;
+    text-decoration: none;
+    padding: 10px;
+    opacity: 0.7;
+    transition: .5s ;
+}
+
+.link.active, .link:hover{
+    opacity: 1;
+}
+
+.user-interactions{
+    display: flex;
+    position: absolute;
+    right: 5vw;
+    top: 50%;
+    transform: translateY(-50%) ;
+}
+
+.cart, .user{
+    width: 30px;
+    height: 30px;
+    position: relative;
+    margin: 10px;
+    cursor: pointer;
+}
+
+.cart-icon, .user-icon{
+    width: 100%;
+    height: 100%;
+    object-fit: cover; 
+}
+
+.cart-item-count{
+    font-family: 'Brawler', serif;
+    color: #fff;
+    padding: 5px;
+    font-size: 15px;
+    border-radius: 50px;
+    background: #190c05;
+    position: absolute;
+    bottom: -12px;
+    left: -12px;
+}
+
+.Flex-Container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.Flex-Content{
+    margin: 0;
+    display: flex;
+    flex-flow: row;
+    justify-content: center;
+}
+
+.Product-Details{
+    padding-left: 2em;
+}
+
+.Buy{
+    justify-content: center;
+}
+
+.card-list{
+display: flex;
+flex: row;
+flex-wrap: wrap;
+justify-content: space-evenly;
+margin-left: 10vh;
+margin-right: 10vh;
+
+}
+
+.card-img-top{
+width: 100px;
+height: 180px;
+align-self: center;
+}
+
+.Video{
+    display: block;
+    margin: auto;
+}
+
+.card-text{
+    margin: 0;
+}
+
+.Phone-Name{
+   text-align: center;
+}
